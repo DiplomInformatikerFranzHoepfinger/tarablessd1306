@@ -21,16 +21,16 @@ config SSD1306_DEFAULT_I2C_PORT_NUMBER
 config SSD1306_DEFAULT_I2C_SCL_PIN
     depends on SSD1306_ENABLE_DEFAULT_I2C_INTERFACE
     int "Default SCL pin number"
-    default 22
+    default 15
 
 config SSD1306_DEFAULT_I2C_SDA_PIN
     depends on SSD1306_ENABLE_DEFAULT_I2C_INTERFACE
     int "Default SDA pin number"
-    default 21
+    default 4
 
 config SSD1306_ENABLE_DEFAULT_SPI_INTERFACE
     bool "Enable default SPI interface"
-    default y
+    default n
     help
         Provides initialization code for both the i2c device and spi attached display.
 
