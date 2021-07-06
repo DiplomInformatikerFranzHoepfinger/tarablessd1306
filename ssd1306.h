@@ -13,6 +13,7 @@ extern "C" {
 #include <stdbool.h>
 
 #include "sdkconfig.h"
+#include "driver/spi_master.h"
 #include "ssd1306_err.h"
 
 #define SSD_ALWAYS_INLINE __attribute__( ( always_inline ) )
@@ -65,7 +66,7 @@ typedef bool ( *WriteDataProc ) ( struct SSD1306_Device* DeviceHandle, const uin
 typedef bool ( *ResetProc ) ( struct SSD1306_Device* DeviceHandle );
 
 struct spi_device_t;
-typedef struct spi_device_t* spi_device_handle_t;
+
 
 struct SSD1306_FontDef;
 
